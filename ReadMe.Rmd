@@ -1,0 +1,16 @@
+### Introduction
+
+This R programming assignment requires extracting, and demonstrate the ability to collect, 
+work with, and clean a data set. The Dataset is from Samsung and it is titled
+"Human Activity Recognition Using Smartphones". The code will involve 
+data preparation and steps that involve merging, extraction, 
+using descriptive activity names and writing out the output of tidy data.
+
+### Example: Code showing merging files that are involved in this activity
+
+alldataSubject <- rbind(SubjectTrain,SubjectTest)
+setnames(alldataSubject, "V1", "subject")
+alldataActivity<- rbind(ActivityTrain, ActivityTest)
+setnames(alldataActivity, "V1", "activityNum")
+
+dataTable <- rbind(dataTrain, dataTest)
